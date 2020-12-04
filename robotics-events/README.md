@@ -1,4 +1,5 @@
 # Robotics-Events
+Welcome to BRAIN-IoT!
 
 **Prerequisites** The repository will be built using bnd version 5.1.2, so the Maven version must be at least 3.5.4
 

@@ -38,10 +38,11 @@ install:
     - mvn $MAVEN_CLI_OPTS package
 
 script:
-    - mvn $MAVEN_CLI_OPTS clean verify
+    - mvn $MAVEN_CLI_OPTS clean verify 
 
 
 after_success:
      - mvn $MAVEN_CLI_OPTS $MAVEN_DEPLOY_OPTS clean package org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy
+
 
 #end
