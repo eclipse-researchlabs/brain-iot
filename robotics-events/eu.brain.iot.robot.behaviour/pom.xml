@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>smartbehavior</artifactId>
+		<groupId>eu.brain.iot.service.robotic</groupId>
+		<version>0.0.3-SNAPSHOT</version>
+	</parent>
+
+	<groupId>eu.brain.iot.service.robotic</groupId>
+	<artifactId>eu.brain.iot.robot.behaviour</artifactId>
+	<version>0.0.3-SNAPSHOT</version>
+
+	<description>The eu.brain.iot.robot.behaviour DS component - built using OSGi enRoute R7</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>osgi-api</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>enterprise-api</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>test-bundles</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>impl-index</artifactId>
+			<type>pom</type>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>eu.brain.iot.service.robotic</groupId>
+			<artifactId>eu.brain.iot.robot.api</artifactId>
+			<version>0.0.3-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>eu.brain.iot.service.robotic</groupId>
+			<artifactId>door.api</artifactId>
+			<version>0.0.3-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paremus.brain.iot</groupId>
+			<artifactId>eventing.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.paremus.brain.iot</groupId>
+			<artifactId>eventing.impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.paremus.brain.iot</groupId>
+			<artifactId>message.integrity.insecure.impl</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Expected to inherit configuration from a parent enRoute pom. This 
+				includes -contract definitions and maven-jar-plugin setup -->
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			<!-- Validate that the smart behaviour can resolve -->
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-resolver-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>resolve</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<bndruns>
+								<bndrun>RobotBehaviour.bndrun</bndrun>
+							</bndruns>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.paremus.brain.iot.maven</groupId>
+				<artifactId>smart-behaviour-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>smart-behaviour</goal>
+						</goals>
+						<configuration>
+							<bndrun>RobotBehaviour.bndrun</bndrun>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>smartbehavior</artifactId>
+		<groupId>eu.brain.iot.service.robotic</groupId>
+		<version>0.0.3-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>eu.brain.iot.robot.api</artifactId>
+
+	<description>The eu.brain.iot.robot.api API bundle - built using OSGi enRoute R7</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>osgi-api</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>com.paremus.brain.iot</groupId>
+			<artifactId>eventing.api</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Expected to inherit configuration from a parent enRoute pom. This 
+				includes -contract definitions and maven-jar-plugin setup -->
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-baseline-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

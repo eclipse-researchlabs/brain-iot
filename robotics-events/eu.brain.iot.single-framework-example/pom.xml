@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>smartbehavior</artifactId>
+		<groupId>eu.brain.iot.service.robotic</groupId>
+		<version>0.0.3-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>eu.brain.iot.single-framework-example</artifactId>
+
+	<description>The eu.brain.iot.single-framework-example application packaging project - using OSGi enRoute R7</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>osgi-api</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>impl-index</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi.enroute</groupId>
+			<artifactId>debug-bundles</artifactId>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>eu.brain.iot.service.robotic</groupId>
+			<artifactId>door.impl</artifactId>
+			<version>0.0.3-SNAPSHOT</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>eu.brain.iot.service.robotic</groupId>
+			<artifactId>eu.brain.iot.robot.behaviour</artifactId>
+			<version>0.0.3-SNAPSHOT</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.gogo.runtime</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.paremus.brain.iot</groupId>
+			<artifactId>eventing.impl</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-indexer-maven-plugin</artifactId>
+				<configuration>
+					<includeJar>true</includeJar>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-export-maven-plugin</artifactId>
+				<configuration>
+					<bndruns>
+						<bndrun>RobotBehaviour-Door.bndrun</bndrun>
+				
+					</bndruns>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>biz.aQute.bnd</groupId>
+				<artifactId>bnd-resolver-maven-plugin</artifactId>
+				<configuration>
+					<bndruns>
+						<bndrun>RobotBehaviour-Door.bndrun</bndrun>
+						<bndrun>debug.bndrun</bndrun>
+					</bndruns>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

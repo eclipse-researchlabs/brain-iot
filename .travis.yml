@@ -1,0 +1,47 @@
+# BRAIN-IoT service robotic .travis-ci.yml
+# https://docs.gitlab.com/ce/ci/yaml/
+
+# docker image with maven 3 and java 11
+#image: maven:3-jdk-11
+
+################
+### Language ###
+################
+language: java
+
+###########
+### JDK ###
+###########
+jdk:
+  - oraclejdk11
+
+
+env:
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  MAVEN_CLI_OPTS: "'-s .m2/settings.xml -B'"
+  MAVEN_DEPLOY_OPTS: "'-DaltReleaseDeploymentRepository=brain-iot-releases::default::https://nexus.repository-pert.ismb.it/repository/maven-releases -DaltSnapshotDeploymentRepository=brain-iot-snapshots::default::https://nexus.repository-pert.ismb.it/repository/maven-snapshots'"
+#  CI_DEBUG_TRACE: "true"
+
+# Cache downloaded dependencies and plugins between builds.
+cache:
+  directories:
+    - $HOME/robotics-events/.m2/repository
+
+before_install:
+    - wget https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.zip
+    - unzip -qq apache-maven-3.6.3-bin.zip
+    - export M2_HOME=$PWD/apache-maven-3.6.3
+    - export PATH=$M2_HOME/bin:$PATH
+    - cd robotics-events
+
+install:
+    - mvn $MAVEN_CLI_OPTS package
+
+script:
+    - mvn $MAVEN_CLI_OPTS clean verify
+
+
+after_success:
+     - mvn $MAVEN_CLI_OPTS $MAVEN_DEPLOY_OPTS clean package org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy
+
+#end
