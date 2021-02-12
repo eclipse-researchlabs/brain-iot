@@ -1,8 +1,8 @@
-# brain-iot
-welcome to BRAIN-IoT!
+# Brain-IoT platform
+The Brain-IoT platform is a collection of tools developed as part of the Brain-IoT project.
 
-
-## brain-iot opensource components
+## Brain-IoT open-source components
+This is the list of components of the Brain-IoT platform released under open-source license.
 
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
@@ -21,7 +21,9 @@ welcome to BRAIN-IoT!
 | Critical Water Infrastructure Testbed | | | |
 
 
-## other closed components
+## Brain-IoT closed components
+
+The Brain-IoT platform includes also two components that are not open-source, which provide additional features not available in the open-source release. The repositories indicated in this table are private and accessible only after authorization. If you are intereseted in such components, you can contact the Consortium partners.
 
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
