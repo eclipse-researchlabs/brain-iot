@@ -7,8 +7,8 @@ This is the list of components of the Brain-IoT platform released under open-sou
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
 | ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | | |
-| Brain IoT Modelling Languages | | | |
-| Brain IoT Modelling Tool | | | |
+| Brain IoT Modelling Languages | [Documentation](https://wiki.eclipse.org/Papyrus) | https://ci.eclipse.org/papyrus/view/IoTML/ | https://git.eclipse.org/c/papyrus/org.eclipse.papyrus-iotml.git/ |
+| Brain IoT Modelling Tool | [Documentation](https://wiki.eclipse.org/Papyrus) | | |
 | Edge Node SensiNact | | | [sensinact door](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-Door) TBR <br/> [sensinact smart behaviour](https://git.repository-pert.ismb.it/BRAIN-IoT/sensinact-smart-behaviour) TBR <br/> [sensinact sica smartbehaviour](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-sica-smartbehaviour) TBR <br/> [sensinact sica bridge](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-sica) TBR <br/> [sensinact sica smart-behaviour](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-sica-smartbehaviour) TBR <br/> [sensinact-gateway](https://github.com/eclipse-researchlabs/brain-iot-sensiNact) TBR <br/> [sensinact meter](https://git.repository-pert.ismb.it/BRAIN-IoT/security-smart-behaviour/tree/master/hydrao-decoder) TBR |
 | SensiNact studio | [Documentation](https://wiki.eclipse.org/SensiNact) | | |
 | s0nar | [readme](https://github.com/eclipse-researchlabs/brain-iot-s0nar/blob/master/README.md) | | [s0nar](https://github.com/eclipse-researchlabs/brain-iot-s0nar) |
