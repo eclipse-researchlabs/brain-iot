@@ -26,8 +26,7 @@ The Brain-IoT platform also includes two components that are not open-source, wh
 
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
-| ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/com/airbus/cybersecurity/brain/iot/message.integrity.secure.impl/0.0.1-SNAPSHOT/message.integrity.secure.impl-0.0.1-20210204.142519-18.jar) <br/> [SGS (Security Gateway Service)] TBD <br/> [Security Module] TBD | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://git.repository-pert.ismb.it/BRAIN-IoT/secure-message-integrity-service) <br/> [SGS (Security Gateway Service)] TBD <br/>
-[Security Module] |
+| ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/com/airbus/cybersecurity/brain/iot/message.integrity.secure.impl/0.0.1-SNAPSHOT/message.integrity.secure.impl-0.0.1-20210204.142519-18.jar) <br/> [SGS (Security Gateway Service)] TBD <br/> [Security Module] TBD | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://git.repository-pert.ismb.it/BRAIN-IoT/secure-message-integrity-service) <br/> [SGS (Security Gateway Service)] TBD <br/> [Security Module] TBD |
 | Physical Layer Modelling Language | | | |
 
 ## Brain-IoT applications
