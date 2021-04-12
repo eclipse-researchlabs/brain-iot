@@ -22,11 +22,12 @@ This is the list of components of the Brain-IoT platform released under open-sou
 
 ## Brain-IoT closed components
 
-The Brain-IoT platform includes also two components that are not open-source, which provide additional features not available in the open-source release. The repositories indicated in this table are private and accessible only after authorization. If you are intereseted in such components, you can contact the Consortium partners.
+The Brain-IoT platform also includes two components that are not open-source, which provide additional features not available in the open-source release. The repositories indicated in this table are private and accessible only after authorization. If you are interested in such components, you can contact the Consortium partners.
 
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
-| ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | | |
+| ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/com/airbus/cybersecurity/brain/iot/message.integrity.secure.impl/0.0.1-SNAPSHOT/message.integrity.secure.impl-0.0.1-20210204.142519-18.jar) <br/> [SGS (Security Gateway Service)] TBD <br/> [Security Module] TBD | [Authentication Backend] TBD <br/> [Authorization Backend] TBD <br/> [Identity Administration Service] TBD <br/> [MIS (Message Integrity Service)](https://git.repository-pert.ismb.it/BRAIN-IoT/secure-message-integrity-service) <br/> [SGS (Security Gateway Service)] TBD <br/>
+[Security Module] |
 | Physical Layer Modelling Language | | | |
 
 ## Brain-IoT applications
