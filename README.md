@@ -40,3 +40,7 @@ These repositories contain the source code of applications, which has been devel
 
 
 ### Water Infrastructure Management
+
+| Application | Documentation | Distributions | Source Repos |
+| ------------- | ------------- | ------------- | ------------- |
+| Critical Water Infrastructure | [readme](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-critical-water-infrastructure/blob/main/README.md) | Critical Water Infrascruture: [critical-water-infrastructure-api](https://nexus.repository-pert.ismb.it/repository/maven-releases/org/eclipse/sensinact/brainiot/infrastructure/critical-water-infrastructure-api/1.0/critical-water-infrastructure-api-1.0.jar), [critical-water-infrascture-impl](https://nexus.repository-pert.ismb.it/repository/maven-releases/org/eclipse/sensinact/brainiot/infrastructure/critical-water-infrastructure-impl/1.0/critical-water-infrastructure-impl-1.0.jar), [critical-water-infrastructure-app](https://nexus.repository-pert.ismb.it/repository/maven-releases/org/eclipse/sensinact/brainiot/infrastructure/critical-water-infrastructure-app/1.0/critical-water-infrastructure-app-1.0.jar) | [Critical Water Infrastrcture](https://github.com/eclipse-researchlabs/brain-iot-sensiNact-critical-water-infrastructure) |
