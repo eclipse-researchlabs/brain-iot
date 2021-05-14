@@ -16,7 +16,7 @@ This is the list of components of the Brain-IoT platform released under open-sou
 | BIP Java Code Generator | | | |
 | Attack-Defence Strategies Exploration Tool | [readme](https://github.com/eclipse-researchlabs/brain-iot-Attack-Defence-Exploration/blob/main/README.md) | | [Attack Defence](https://github.com/eclipse-researchlabs/brain-iot-Attack-Defence-Exploration)|
 | WoT-enabled ROS Edge Node | [readme](https://github.com/eclipse-researchlabs/brain-iot-ros-edge-node/blob/main/README.md)  | [robot-api](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/eu/brain/iot/service/robotic/eu.brain.iot.robot.api/1.0.0-SNAPSHOT/eu.brain.iot.robot.api-1.0.0-20210107.104011-55.jar), [robot.config](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/eu/brain/iot/service/robotic/eu.brain.iot.robot.config/1.0.0-SNAPSHOT/eu.brain.iot.robot.config-1.0.0-20210107.104016-43.jar), [robot-msgs](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/eu/brain/iot/service/robotic/eu.brain.iot.robot.msgs/1.0.0-SNAPSHOT/eu.brain.iot.robot.msgs-1.0.0-20210107.104022-69.jar), [robot-service](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/eu/brain/iot/service/robotic/eu.brain.iot.robot.service/1.0.0-SNAPSHOT/eu.brain.iot.robot.service-1.0.0-20210107.104029-148.jar) | [ROS Edge Node](https://github.com/eclipse-researchlabs/brain-iot-ros-edge-node)  |
-| Privacy Control System | | | |
+| Privacy Control System | [readme](https://github.com/eclipse-researchlabs/brain-iot-privacy-control-system/blob/main/README.md) | | [Privacy Control System](https://github.com/eclipse-researchlabs/brain-iot-privacy-control-system) |
 
 
 ## Brain-IoT closed components
