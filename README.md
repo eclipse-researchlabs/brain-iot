@@ -25,7 +25,7 @@ The Brain-IoT platform also includes two components that are not open-source, wh
 
 | Component | Documentation | Distributions | Source Repos |
 | ------------- | ------------- | ------------- | ------------- |
-| ACE Server | [Documentation](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) | [MIS (Message Integrity Service)](https://nexus.repository-pert.ismb.it/repository/maven-snapshots/com/airbus/cybersecurity/brain/iot/message.integrity.secure.impl/0.0.1-SNAPSHOT/message.integrity.secure.impl-0.0.1-20210204.142519-18.jar) |
+| ACE Server | [MIS](http://www.brain-iot.eu/?smd_process_download=1&download_id=1489) <br/> [IoT Security](https://airbus-cyber-security.com/wp-content/uploads/2020/11/Airbus-CyberSecurity_IOT.pdf) | If you are interested in these solutions, do not hesitate to contact us: https://airbus-cyber-security.com/contact-us/ |
 | Physical Layer Modelling Language | | | |
 
 ## Brain-IoT applications
